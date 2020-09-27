@@ -1,0 +1,12 @@
+canvas {
+  display: block;
+  border: 1px solid;
+}
+
+.player-server {
+  display: block;
+}
+
+.player-server p {
+  margin: 0;
+}

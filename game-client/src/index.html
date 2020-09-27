@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack Тест</title>
+  </head>
+  <body>
+    <div id="root">
+      <p id="status">Подключаемся к серверу...</p>
+      <select id="game-type">
+        <option></option>
+        <option>Tanks</option>
+      </select>
+      <div>
+        <div class="player-server">
+          <p>Сервер 1 игрока</p>
+          <input id="player-server-1" value="localhost:8666"/>
+        </div>
+        <div class="player-server">
+          <p>Сервер 2 игрока</p>
+          <input id="player-server-2" value="localhost:8666"/>
+        </div>
+      </div>
+      <div class="player-server">
+        <p id="number-games-label">Количество игр: 1</p>
+        <input id="number-games-input" type="range" min="1" max="100000" value="1">
+      </div>
+      <div class="player-server">
+        <p id="frame-delay-label">Задержка кадра: 40</p>
+        <input id="frame-delay-input" type="range" min="0" max="1000" value="40">
+        <button id="frame-delay-apply">Применить задержку</button>
+      </div>
+      <p id="game-info"></p>
+      <p id="world-info"></p>
+      <p id="wins-info"></p>
+      <button id="start-game">Начать игру</button>
+      <button id="stop-game">Остановить игру</button>
+      <canvas id="game"></canvas>
+    </div>
+  </body>
+</html>
